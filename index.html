@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pets</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Import CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="topbar bg-dark"> <!--  d-none d-sm-block = não aprecer top no celular-->
+            <div class="container">
+                <div class="row text-white align-items-center py-2">
+                    <div class="col-12 col-sm-8 text-sm-left text-center">
+                        <i class="fa fa-phone-square" aria-hidden="true"></i>
+                        (19) 98896-5632 | 3445-9658
+                        <i class="fas fa-clock" aria-hidden="true"></i>
+                        Aberto 24h todos os dias.
+                    </div>
+                    <div class="col-12 col-sm-4 text-sm-right text-center">
+                        <div class="icons d-inline-flex">
+                            <a href=""><i class="fab fa-facebook-square"></i></a>
+                            <a href=""><i class="fab fa-twitter-square"></i></a>
+                            <a href=""><i class="fab fa-youtube-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- FIM topbar -->
+
+        <nav class="navbar navbar-light bg-warning navbar-expand-md">
+            <div class="container">
+                <a href="#" class="navbar-brand">   <!-- navbar-brand = classe para logo -->
+                    <img src="images/logo.png" alt="Logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a href="index.html" class="nav-link">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="planos.html" class="nav-link">Planos</a>
+                        </li>
+                        
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Blog</a>
+                            <div class="dropdown-menu">
+                                <a href="blog.html" class="dropdown-item active">Novidades</a>
+                                <a href="blog.html" class="dropdown-item">Cuidados</a>
+                                <a href="blog.html" class="dropdown-item">Adoção</a>
+                            </div>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="contato.html" class="nav-link">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav><!-- FIM navbar -->
+    </header><!-- FIM Header -->
+
+    <section class="banner container-fluid p-0 d-none d-sm-block"> <!-- d-none d-sm-block = não aprecer banner no celular-->
+        <div id="banner-home" class="carousel slide" data-ride="carousel" data-pause="false" data-interval="2000">
+            <ol class="carousel-indicators">
+                <li data-target="#banner-home" data-slide-to="0" class="active"></li>
+                <li data-target="#banner-home" data-slide-to="1"></li>
+                <li data-target="#banner-home" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                <img class="d-block w-100" src="images/banner-1.jpg" alt="Primeiro Slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3>Cachorro</h3>
+                    <p>...</p>
+                </div>
+                </div>
+                 <div class="carousel-item">
+                <img class="d-block w-100" src="images/banner-2.jpg" alt="Segundo Slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3>Gato</h3>
+                    <p>...</p>
+                </div>
+                </div>
+                <div class="carousel-item">
+                <img class="d-block w-100" src="images/banner-3.jpg" alt="Terceiro Slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3>Cachorro</h3>
+                    <p>...</p>
+                </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#banner-home" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#banner-home" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Próximo</span>
+            </a>
+        </div>
+    </section>
+
+    <section class="servicos bg-light pt-4 pb-2 text-center">
+        <div class="container">
+            <div class="my-5 text-center">
+                <span class="h5">TUDO PARA O SEU PET</span>
+                <p class="display-4">A saúde e o bem-estar!</p>
+            </div>
+            <div class="row">
+                <div class="col-md-4 d-none d-md-block"> <!-- d-none d-md-block = não aprecer imagem no celular-->
+                    <div class="bg-servicos mb-5 mx-auto">
+                        <img class="w-100" src="images/bg-servicos.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-sm-8">
+                    <div class="row">
+
+                        <div class="col-sm-6 mb-4">
+                            <div class="media">
+                                <span class="icon icon-primary">
+                                    <i class="fas fa-home fa-2x"></i> <!-- fa-2x = vem do fontawsome -->
+                                </span>
+                                <div class="media-body text-center">
+                                    <h5 class="mb-3">Hotel de animais</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit, quam,
+                                        reiciendis, enim sequi at ducimus minus laudantium commodi accusantium quod vero. 
+                                        Expedita voluptates aut sapiente, non deserunt est quia veritatis.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 mb-4">
+                            <div class="media">
+                                <span class="icon icon-primary">
+                                    <i class="fas fa-cut fa-2x"></i> <!-- fa-2x = vem do fontawsome -->
+                                </span>
+                                <div class="media-body text-center">
+                                    <h5 class="mb-3">Banho e Tosa</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit, quam,
+                                        reiciendis, enim sequi at ducimus minus laudantium commodi accusantium quod vero. 
+                                        Expedita voluptates aut sapiente, non deserunt est quia veritatis.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 mb-4">
+                            <div class="media">
+                                <span class="icon icon-primary">
+                                    <i class="fas fa-shield-alt fa-2x"></i> <!-- fa-2x = vem do fontawsome -->
+                                </span>
+                                <div class="media-body text-center">
+                                    <h5 class="mb-3">Vacinação</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit, quam,
+                                        reiciendis, enim sequi at ducimus minus laudantium commodi accusantium quod vero. 
+                                        Expedita voluptates aut sapiente, non deserunt est quia veritatis.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 mb-4">
+                            <div class="media">
+                                <span class="icon icon-primary">
+                                    <i class="fas fa-medkit fa-2x"></i> <!-- fa-2x = vem do fontawsome -->
+                                </span>
+                                <div class="media-body text-center">
+                                    <h5 class="mb-3">Cuidados domésticos</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit, quam,
+                                        reiciendis, enim sequi at ducimus minus laudantium commodi accusantium quod vero. 
+                                        Expedita voluptates aut sapiente, non deserunt est quia veritatis.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 mb-4">
+                            <div class="media">
+                                <span class="icon icon-primary">
+                                    <i class="fas fa-bone fa-2x"></i> <!-- fa-2x = vem do fontawsome -->
+                                </span>
+                                <div class="media-body text-center">
+                                    <h5 class="mb-3">Alimentação saudável</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit, quam,
+                                        reiciendis, enim sequi at ducimus minus laudantium commodi accusantium quod vero. 
+                                        Expedita voluptates aut sapiente, non deserunt est quia veritatis.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 mb-4">
+                            <div class="media">
+                                <span class="icon icon-primary">
+                                    <i class="fas fa-paw fa-2x"></i> <!-- fa-2x = vem do fontawsome -->
+                                </span>
+                                <div class="media-body text-center">
+                                    <h5 class="mb-3">Adoção</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit, quam,
+                                        reiciendis, enim sequi at ducimus minus laudantium commodi accusantium quod vero. 
+                                        Expedita voluptates aut sapiente, non deserunt est quia veritatis.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <a href="#" class="btn btn-warning btn-lg mt-2 mb-4">Conheça nossos Planos</a>
+        </div>
+    </section>
+
+    <!-- Iniciando Blockquote -->
+
+    <section id="home-quote" class="p-md-4">
+        <blockquote class="blockquote text-center text-white p-3"> <!-- text-center - alinha texto, imagens-->
+            <p class="mb-0 display-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <footer class="blockquote-footer text-warning">Alguém famoso na <cite title="Título da fonte">Título da fonte</cite></footer> <!--  blockquote-footer - deixa o risco de citação -->
+        </blockquote>
+    </section>
+
+    <section class="container">    
+        <div class="my-5 text-center">
+            <span class="h2 d-block">AINDA ESTÁ COM DÚVIDAS</span>
+            <span class="h4 d-black-50">Perguntas Frequentes</span>
+        </div>
+        <div class="row justify-content-center accordion" id="my-accordion"> <!--  justify-content-center - alinhar colunas -->
+            <div class="col-6">
+                <div class="perguntas" id="headingOne">
+                    <h5 class="mb-0">
+                    <a  data-toggle="collapse" data-target="#pergunta-1" aria-expanded="true" aria-controls="collapseOne">
+                        <i class="fas fa-arrow-right"></i>
+                        Grávidas podem ter contato com cães e gatos?
+                    </a>
+                    </h5>
+                </div>
+                
+                <div id="pergunta-1" class="collapse show" aria-labelledby="headingOne" data-parent="#my-accordion">
+                    <div class="card-body">
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                        richardson ad squid. 3 wolf moon officia aute, non alemanha 0 x 2 
+                        coreia do sul cupidatat skateboard dolor brunch.
+                    </div>
+                </div>
+
+                <!-- ****************************************************** -->
+
+                <div class="dropdown-divider"></div> <!--   dividir -->
+                <div class="perguntas" id="headingOne">
+                    <h5 class="mb-0">
+                    <a  data-toggle="collapse" data-target="#pergunta-2" aria-expanded="true" aria-controls="collapseOne">
+                        <i class="fas fa-arrow-right"></i>
+                        Em que época do ano é melhor aplicar o antipulgas nos pets?
+                    </a>
+                    </h5>
+                </div>
+                    
+                <div id="pergunta-2" class="collapse" aria-labelledby="headingOne" data-parent="#my-accordion">
+                    <div class="card-body">
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                        richardson ad squid. 3 wolf moon officia aute, non alemanha 0 x 2 
+                        coreia do sul cupidatat skateboard dolor brunch.
+                    </div>
+                </div>
+
+                <!-- ****************************************************** -->
+
+                <div class="dropdown-divider"></div>
+                <div class="perguntas" id="headingOne">
+                    <h5 class="mb-0">
+                    <a  data-toggle="collapse" data-target="#pergunta-3" aria-expanded="true" aria-controls="collapseOne">
+                        <i class="fas fa-arrow-right"></i>
+                        O que são zoonoses?
+                    </a>
+                    </h5>
+                </div>
+                    
+                <div id="pergunta-3" class="collapse" aria-labelledby="headingOne" data-parent="#my-accordion">
+                    <div class="card-body">
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                        richardson ad squid. 3 wolf moon officia aute, non alemanha 0 x 2 
+                        coreia do sul cupidatat skateboard dolor brunch.
+                    </div>
+                </div>
+
+                <!-- ****************************************************** -->
+
+                <div class="dropdown-divider"></div>
+                <div class="perguntas" id="headingOne">
+                    <h5 class="mb-0">
+                    <a  data-toggle="collapse" data-target="#pergunta-4" aria-expanded="true" aria-controls="collapseOne">
+                        <i class="fas fa-arrow-right"></i>
+                        Queria saber o que é o “Bicho Geográfico”?
+                    </a>
+                    </h5>
+                </div>
+                        
+                <div id="pergunta-4" class="collapse" aria-labelledby="headingOne" data-parent="#my-accordion">
+                    <div class="card-body">
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                        richardson ad squid. 3 wolf moon officia aute, non alemanha 0 x 2 
+                        coreia do sul cupidatat skateboard dolor brunch.
+                    </div>
+                </div>
+
+                <!-- ****************************************************** -->
+
+                <div class="dropdown-divider"></div>
+                <div class="perguntas" id="headingOne">
+                    <h5 class="mb-0">
+                    <a  data-toggle="collapse" data-target="#pergunta-5" aria-expanded="true" aria-controls="collapseOne">
+                        <i class="fas fa-arrow-right"></i>
+                        Mosquitos podem transmitir doenças para os pets?
+                    </a>
+                    </h5>
+                </div>
+                            
+                <div id="pergunta-5" class="collapse" aria-labelledby="headingOne" data-parent="#my-accordion">
+                    <div class="card-body">
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                        richardson ad squid. 3 wolf moon officia aute, non alemanha 0 x 2 
+                        coreia do sul cupidatat skateboard dolor brunch.
+                    </div>
+                </div>
+
+                <!-- ****************************************************** -->
+                
+                <div class="dropdown-divider"></div>
+                <div class="perguntas" id="headingOne">
+                    <h5 class="mb-0">
+                    <a  data-toggle="collapse" data-target="#pergunta-6" aria-expanded="true" aria-controls="collapseOne">
+                        <i class="fas fa-arrow-right"></i>
+                        Pets castrados podem ficar mais calmos?
+                    </a>
+                    </h5>
+                </div>
+                                
+                <div id="pergunta-6" class="collapse" aria-labelledby="headingOne" data-parent="#my-accordion">
+                    <div class="card-body">
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                        richardson ad squid. 3 wolf moon officia aute, non alemanha 0 x 2 
+                        coreia do sul cupidatat skateboard dolor brunch.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="depoimento container-fluid bg-dark text-white py-3 mt-5">
+        <div class="mt-4 text-center">
+            <h5 class="d-block">DIGA ALGO SOBRE SEU PET</h5>
+        </div>
+        <div class="row justify-content-center pt-4">
+            <div class="col-12 col-sm-8 p-0 text-center">
+                <div id="depoimentos" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#depoimentos" data-slide-to="0" class="active"></li>
+                        <li data-target="#depoimentos" data-slide-to="1"></li>
+                        <li data-target="#depoimentos" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <span class="lead text-warning d-block">Juliana Dias</span>
+                            <img class="rounded-circle" src="images/Juliana.jpg" alt="Primeiro Slide">
+                            <p class="p-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti, cumque!</p>
+                        </div>
+                        <div class="carousel-item">
+                            <span class="lead text-warning d-block">Fabia Ferreira</span>
+                            <img class="rounded-circle" src="images/Fabia.jpg" alt="Segundo Slide">
+                            <p class="p-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti, cumque!</p>
+                        </div>
+                        <div class="carousel-item">
+                            <span class="lead text-warning d-block">Carla Magalhães</span>
+                            <img class="rounded-circle" src="images/Karla.jpg" alt="Terceiro Slide">
+                            <p class="p-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti, cumque!</p>
+                        </div>
+                    </div>
+
+                    <!-- Seta -->
+
+                    <!-- <a class="carousel-control-prev" href="#depoimentos" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Anterior</span>
+                    </a>
+                    <a class="carousel-control-next" href="#depoimentos" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Próximo</span>
+                    </a> -->
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-warning text-dark pt-4">
+        <div class="container py-4 justify-content-round">
+            <div class="row">
+                <div class="col-6 col-md-4">
+                    <h5 class="py-2">SOBRE NÓS</h5>
+                    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                       Quam minus quisquam molestias voluptates aliquam vero at delectus incidunt aperiam sequi enim,
+                       praesentium error sed sunt fugit veritatis ad iusto dicta.
+                    </P>
+                </div>
+                <div class="col-6 col-md-3">
+                    <h5 class="py-2">PÁGINAS</h5>
+                    <ul class="list-unstyled"> <!-- lista os marcadores da lista -->
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Plano</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-3">
+                    <h5 class="py-2">CONTATO</h5>
+                    <ul class="list-unstyled"> <!-- lista os marcadores da lista -->
+                        <li>contato@email.com</li>
+                        <li>(11)9999-9999</li>
+                        <li>De Seg. à Dom 24h</li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-2">
+                    <h5 class="py-2">REDES SOCIAIS</h5>
+                   <div class="icons d-inline-flex">
+                        <a href=""><i class="fab fa-facebook-square"></i></a>
+                        <a href=""><i class="fab fa-instagram"></i></a>
+                        <a href=""><i class="fab fa-linkedin"></i></a>
+                   </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-dark text-center py-3 text-white">
+            <span class="m-1">&copy; PETS 2019 - Alguns Direitos Reservados</span>
+        </div>
+    </footer>
+
+    <!-- Import Javascript -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+</body>
+</html>

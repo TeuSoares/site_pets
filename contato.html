@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pets</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Import CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="topbar bg-dark"> <!--  d-none d-sm-block = não aprecer top no celular-->
+            <div class="container">
+                <div class="row text-white align-items-center py-2">
+                    <div class="col-12 col-sm-8 text-sm-left text-center">
+                        <i class="fa fa-phone-square" aria-hidden="true"></i>
+                        (19) 98896-5632 | 3445-9658
+                        <i class="fas fa-clock" aria-hidden="true"></i>
+                        Aberto 24h todos os dias.
+                    </div>
+                    <div class="col-12 col-sm-4 text-sm-right text-center">
+                        <div class="icons d-inline-flex">
+                            <a href=""><i class="fab fa-facebook-square"></i></a>
+                            <a href=""><i class="fab fa-twitter-square"></i></a>
+                            <a href=""><i class="fab fa-youtube-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- FIM topbar -->
+
+        <nav class="navbar navbar-light bg-warning navbar-expand-md">
+            <div class="container">
+                <a href="#" class="navbar-brand">   <!-- navbar-brand = classe para logo -->
+                    <img src="images/logo.png" alt="Logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a href="index.html" class="nav-link">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="planos.html" class="nav-link">Planos</a>
+                        </li>
+                        
+                        <li class="nav-item dropdown">
+                            <a href="blog.html" class="nav-link dropdown-toggle" data-toggle="dropdown">Blog</a>
+                            <div class="dropdown-menu">
+                                <a href="#" class="dropdown-item active">Novidades</a>
+                                <a href="#" class="dropdown-item">Cuidados</a>
+                                <a href="#" class="dropdown-item">Adoção</a>
+                            </div>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="contato.html" class="nav-link">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav><!-- FIM navbar -->
+    </header><!-- FIM Header -->
+
+    <!-- Iniciando Blockquote -->
+
+    <section id="home-quote" class="p-md-4">
+        <blockquote class="blockquote text-center text-white p-3"> <!-- text-center - alinha texto, imagens-->
+            <p class="mb-0 display-4">CONTATO</p>
+        </blockquote>
+    </section>
+
+    <section class="contato container">
+        <div class="text-center my-5">
+            <span class="h5 d-block">Gostaria de ouvir você!</span>
+            <h2 class="display-4">Fale conosco</h2>
+        </div>
+
+        <div class="row mb-2">
+            <div class="col-12 col-md-9">
+                <form action="" class="bg-warning rounded p-4">
+                    <div class="form-row">
+
+                        <div class="form-group col-md-6">
+                            <label>Nome</label>
+                            <input type="text" class="form-control">
+                        </div>
+
+                        <div class="form-group col-md-6">
+                            <label>Email</label>
+                            <input type="email" class="form-control">
+                        </div>
+
+                        <div class="form-group col-md-4">
+                            <label>Whatsapp</label>
+                            <input type="text" class="form-control">
+                        </div>
+
+                        <div class="form-group col-md-4">
+                            <label>telefone</label>
+                            <input type="text" class="form-control">
+                        </div>
+
+                        <div class="form-group col-md-4">
+                            <label>Cidade</label>
+                            <input type="text" class="form-control">
+                        </div>
+
+                        <div class="form-group col-md-4">
+                            <label>Faixa etária do pet</label>
+                            <select class="form-control">
+                                <option value="1">0 á 1 ano</option>
+                                <option value="2">1 á 5 ano</option>
+                                <option value="3" selected="">5 á 8 ano</option>
+                                <option value="4">mais de 8 anos</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group col-md-4">
+                            <label>Nome do pet</label>
+                            <input type="text" class="form-control">
+                        </div>
+
+                        <div class="form-group col-md-4">
+                            <label>Assunto</label>
+                            <select class="form-control">
+                                <option value="1">Cirugia</option>
+                                <option value="2">Tratamento</option>
+                                <option value="3" selected="">Higiene</option>
+                                <option value="4">Outros</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group col-12">
+                            <label>Mensagem</label>
+                            <textarea class="form-control" rows="4"></textarea>
+                        </div>
+                        <button class="btn btn-dark btn-lg">Enviar Mensagem</button>
+
+                    </div>
+                </form><!-- FIM FORM contato -->
+                <div class="row justify-content-center mt-4">
+                    <div class="col-md-10">
+                        <p class="display-4 text-center">ou ligue para nós</p>
+                        <p class="text-center h3">(19) 8652-9536 | 3445-9865</p>
+                    </div>
+                    <div class="col-12 mt-4">
+                        <h3>Nosso endereço</h3>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7374.593848000155!2d-47.53657447259413!3d-22.455473675615917!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c7d0cd4d224ea7%3A0xf72a70cbd74f39a7!2sSanta%20Gertrudes%2C%20SP%2C%2013510-000!5e0!3m2!1spt-BR!2sbr!4v1574983215779!5m2!1spt-BR!2sbr" width="100%" height="200" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                    </div>
+                </div>
+            </div>
+            <aside class="col-12 col-md-3 blog-sidebar">
+                <div class="form-search">
+                    <form class="form-inline mt-0">
+                        <div class="input-group input-group-md pl-0">
+                            <input type="text" class="form-control my-0 py-1" placeholder="Pesquisar">
+                            <span class="input-group-btn bg-warning px-2">
+                                <i class="fas fa-search text-white mt-2 p-1"></i>
+                            </span>
+                        </div>
+                    </form>
+                </div>
+                <div class="sidebar">
+                    <h4 class="font-italic mt-4 text-uppercase">mais vistos</h4>
+                    <ol class="list-unstyled mb-0">
+                        <li class="font-weight-bold py-2"><a href="#">Título da matéria - seu pets</a></li>
+                        <li class="font-weight-bold py-2"><a href="#">Título da matéria - seu pets</a></li>
+                        <li class="font-weight-bold py-2"><a href="#">Título da matéria - seu pets</a></li>
+                        <li class="font-weight-bold py-2"><a href="#">Título da matéria - seu pets</a></li>
+                        <li class="font-weight-bold py-2"><a href="#">Título da matéria - seu pets</a></li>
+                    </ol>
+                    <div class="dropdown-divider"></div>
+                    <h4 class="font-italic mt-4 text-uppercase">arquivos</h4>
+                    <ol class="list-unstyled">
+                        <li><a href="#">Agosto 2019</a></li>
+                        <li><a href="#">Setembro 2019</a></li>
+                        <li><a href="#">Outubro 2019</a></li>
+                        <li><a href="#">Novembro 2019</a></li>
+                    </ol>
+                </div>
+            </aside>
+        </div>
+    </section>
+
+    <footer class="bg-warning text-dark pt-4">
+        <div class="container py-4 justify-content-round">
+            <div class="row">
+                <div class="col-6 col-md-4">
+                    <h5 class="py-2">SOBRE NÓS</h5>
+                    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                       Quam minus quisquam molestias voluptates aliquam vero at delectus incidunt aperiam sequi enim,
+                       praesentium error sed sunt fugit veritatis ad iusto dicta.
+                    </P>
+                </div>
+                <div class="col-6 col-md-3">
+                    <h5 class="py-2">PÁGINAS</h5>
+                    <ul class="list-unstyled"> <!-- lista os marcadores da lista -->
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Plano</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-3">
+                    <h5 class="py-2">CONTATO</h5>
+                    <ul class="list-unstyled"> <!-- lista os marcadores da lista -->
+                        <li>contato@email.com</li>
+                        <li>(11)9999-9999</li>
+                        <li>De Seg. à Dom 24h</li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-2">
+                    <h5 class="py-2">REDES SOCIAIS</h5>
+                   <div class="icons d-inline-flex">
+                        <a href=""><i class="fab fa-facebook-square"></i></a>
+                        <a href=""><i class="fab fa-instagram"></i></a>
+                        <a href=""><i class="fab fa-linkedin"></i></a>
+                   </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-dark text-center py-3 text-white">
+            <span class="m-1">&copy; PETS 2019 - Alguns Direitos Reservados</span>
+        </div>
+    </footer>
+
+    <!-- Import Javascript -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+</body>
+</html>
